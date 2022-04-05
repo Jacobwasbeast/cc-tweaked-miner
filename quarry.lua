@@ -5,7 +5,7 @@ local x = 0
 local y = 0
 local z = 0
 local max = 25
-local deep = 80
+local deep = 150
 local facingfw = true
 
 local OK = 0
