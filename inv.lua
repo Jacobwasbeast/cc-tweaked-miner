@@ -53,7 +53,6 @@ function stackItems()
 			this.space = turtle.getItemSpace(i)
 			
 			m[this.name .. 1] = this
-			
 			end
 		end
 	end
