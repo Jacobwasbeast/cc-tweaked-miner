@@ -1,4 +1,4 @@
-os.loadAPI("inv")
+os.loadAPI("inventory")
 os.loadAPI("t")
 
 local x = 0
@@ -119,16 +119,16 @@ function refuel()
 end
 
 function moveH()
-	if inv.isInventoryFull() then
+	if inventory.isInventoryFull() then
 		out("Dropping thrash")
-		inv.dropThrash()
+		inventory.dropThrash()
 		
-		if inv.isInventoryFull() then
+		if inventory.isInventoryFull() then
 			out ("Stacking items")
-			inv.stackItems()
+			inventory.stackItems()
 		end
 		
-		if inv.isInventoryFull() then
+		if inventory.isInventoryFull() then
 			out("Full inventory!")
 			return FULLINV  
 		end
