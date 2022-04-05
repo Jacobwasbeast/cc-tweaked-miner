@@ -19,7 +19,7 @@ function stackItems()
 		if this ~= nil then
 			-- Slot is not empty
 		
-			local saved = m[this.name .. this.damage]
+			local saved = m[this.name .. 1]
 		
 			if saved ~= nil then
 				-- We've seen this item before in the inventory
