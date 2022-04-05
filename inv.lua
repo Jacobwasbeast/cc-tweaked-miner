@@ -37,12 +37,11 @@ function stackItems()
 					saved.slot = i
 					saved.count = ammount - saved.space
 					-- Update on table.
-					m[this.name .. this.damage] = saved
 			
 				elseif ammount == saved.space then
 					-- Just delete the entry
 					
-					m[this.name .. this.damage] = nil
+					m[this.name .. 1] = nil
 					
 				end
 				
@@ -53,7 +52,7 @@ function stackItems()
 			this.slot = i
 			this.space = turtle.getItemSpace(i)
 			
-			m[this.name .. this.damage] = this
+			m[this.name .. 1] = this
 			
 			end
 		end
