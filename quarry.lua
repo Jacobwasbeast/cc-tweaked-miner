@@ -4,8 +4,8 @@ os.loadAPI("t")
 local x = 0
 local y = 0
 local z = 0
-local max = 16
-local deep = 64
+local max = 20
+local deep = 70
 local facingfw = true
 
 local OK = 0
